@@ -1,0 +1,30 @@
+.about {
+  padding: 6rem 0 2.7rem 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description {
+    width: 50%;
+  }
+  &__section-title {
+    text-align: left;
+    & span {
+      background: var(--color-sushi);
+      margin: 1.9rem 0 0 0;
+    }
+  }
+  &__info {
+    margin-top: 4.4rem;
+    font-size: 1.8rem;
+    line-height: 170%;
+    color: var(--color-white);
+    & p:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__img {
+    width: 50%;
+  }
+}

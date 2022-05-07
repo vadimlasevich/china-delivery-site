@@ -1,0 +1,16 @@
+@import "mixins";
+@import "null";
+@import "global";
+@import "vars";
+@import "fonts";
+
+@import "./components/header";
+@import "./components/first-screen";
+@import "./components/calculation";
+@import "./components/benefits";
+@import "./components/options";
+@import "./components/services";
+@import "./components/about";
+@import "./components/questions";
+@import "./components/cooperation";
+@import "./components/footer";

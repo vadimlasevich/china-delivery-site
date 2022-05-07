@@ -1,0 +1,58 @@
+.footer {
+  padding: 7rem 0 4.9rem 0;
+  &__content {
+    border-top: solid 2px var(--color-fire-bush);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 7.5rem;
+  }
+  &__info {
+    font-size: 1.4rem;
+    line-height: 162.5%;
+    color: var(--color-white);
+  }
+  &__logo {
+    margin-bottom: 3rem;
+  }
+  &__info-phone,
+  &__info-mail {
+    color: var(--color-white);
+  }
+  &__info-mail {
+    text-decoration-line: underline;
+  }
+  &__info-socials {
+    display: flex;
+    margin-top: 2rem;
+  }
+  &__info-social-link:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__section-links {
+    margin-top: 3.4rem;
+  }
+  &__section-links-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 146%;
+    margin-bottom: 1.4rem;
+  }
+  &__section-link {
+    font-size: 1.6rem;
+    line-height: 160.5%;
+    text-decoration-line: underline;
+    color: #85899c;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  & a {
+    display: block;
+  }
+}

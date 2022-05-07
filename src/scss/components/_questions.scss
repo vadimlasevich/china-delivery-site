@@ -1,0 +1,102 @@
+.questions {
+  padding-bottom: 10rem;
+  &__section-title {
+    & span {
+      background: var(--color-fire-bush);
+    }
+  }
+  &__content {
+    margin-top: 4.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__items {
+    width: 65%;
+    margin-right: 3.4rem;
+  }
+  &__item {
+    border: 1px solid #3a444e;
+    border-radius: 10px;
+    padding: 2.1rem 1.9rem 2.1rem 3.4rem;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h4 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 124.5%;
+      color: var(--color-white);
+    }
+  }
+  &__item-active {
+    background: #fff;
+    & h4 {
+      color: #000;
+    }
+  }
+  &__item-btn {
+    transition: all 0.5s ease;
+  }
+  &__item-btn-arrow {
+    fill: #fff;
+  }
+  &__item-text {
+    font-size: 1.7rem;
+    line-height: 144.5%;
+    color: #282b38;
+    width: 80%;
+    margin-top: 1rem;
+  }
+  &__form {
+    width: 35%;
+    background: #363a4d;
+    box-shadow: 5px 15px 40px rgba(11, 24, 97, 0.32);
+    border-radius: 20px;
+    padding: 3.8rem 4rem;
+    & input:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+  &__form-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 126%;
+    color: var(--color-white);
+  }
+  &__form-subtitle {
+    font-size: 1.7rem;
+    line-height: 126%;
+    color: var(--color-white);
+    margin: 0.47em 0 1.35em 0;
+  }
+  &__form-btn {
+    margin-top: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 1.9rem 2rem 3.3rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 146%;
+  }
+  &__form-btn-arrow {
+    fill: #b16519;
+  }
+}
+.input-textarea {
+  height: 7rem;
+}
+.arrow-rotate {
+  transform: rotate(-90deg);
+  .questions__item-btn-arrow {
+    fill: #e58d35;
+  }
+}

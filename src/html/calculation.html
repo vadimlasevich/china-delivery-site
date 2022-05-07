@@ -1,0 +1,142 @@
+<section class="calculation" id="calculation">
+  <div class="container">
+    <div class="calculation__content">
+      <div class="calculation__items">
+        <div class="calculation__item calculation__item-active">
+          <div class="calculation__section-title section-title">
+            <h2 class="section-title">Получить рассчет стоимости доставки вашего груза</h2>
+            <span></span>
+          </div>
+          <div class="calculation__item-box">
+            <div class="calculation-item__steps">
+              <span class="calculation-item__step calculation-item__step-active">1</span>
+              <span class="calculation-item__step">2</span>
+              <span class="calculation-item__step">3</span>
+            </div>
+            <div class="calculation-item__inputs">
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Категория товара:</h3>
+                <input class="input" type="text" placeholder="Категория товара" />
+              </div>
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Стоимость груза:</h3>
+                <input class="input" type="text" placeholder="Введите стоимость" />
+              </div>
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Вес груза (кг):</h3>
+                <input class="input" type="text" placeholder="Введите вес" />
+              </div>
+              <div class="calculation-item__input-block">
+                <div class="calculation-item__additional-block">
+                  <h3 class="calculation-item__input-title input-title">Объем груза (м3):</h3>
+                  <button class="calculation-item__input-additional-btn btn-reset">Рассчитать</button>
+                </div>
+                <input class="input" type="text" placeholder="Введите объем" />
+              </div>
+              <div class="calculation-item__input-block calculation-item__inputs-checkbox">
+                <div class="input-checkbox">
+                  <input type="checkbox" name="insurance" id="insurance" />
+                  <label for="insurance">Страховка</label>
+                </div>
+                <div class="input-checkbox">
+                  <input type="checkbox" name="сustoms" id="сustoms" checked />
+                  <label for="сustoms">Таможенное оформление</label>
+                </div>
+              </div>
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Код ТН ВЭД:</h3>
+                <input class="input" type="text" placeholder="Введите код" />
+              </div>
+            </div>
+            <div class="calculation-item__loading-image">
+              <div class="loading-image__info">
+                <div class="loading-image__title">
+                  <span class="loading-image__name-img">фотография</span>
+                  <span class="loading-image__format-img">.jpeg</span>
+                </div>
+                <button class="loading-image__btn-delete btn-reset">Удалить фото</button>
+              </div>
+              <button class="loading-image__btn-loading btn-reset">Загрузить фото товара</button>
+            </div>
+            <button class="calculation-item__button calculation-item__button-next btn-reset btn-fill arrow-btn">
+              Следующий шаг
+              <svg class="circle-arrow calculation-item__button-arrow">
+                <use xlink:href="./images/sprite.svg#circle-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="calculation__item">
+          <div class="calculation__section-title section-title">
+            <h2 class="section-title">Получить рассчет стоимости доставки вашего груза</h2>
+            <span></span>
+          </div>
+          <div class="calculation__item-box">
+            <div class="calculation-item__steps">
+              <span class="calculation-item__step calculation-item__step-active">1</span>
+              <span class="calculation-item__step calculation-item__step-active">2</span>
+              <span class="calculation-item__step">3</span>
+            </div>
+            <div class="calculation-item__inputs">
+              <div class="calculation-item__input-block input-block-wide">
+                <h3 class="calculation-item__input-title input-title">Имя:</h3>
+                <input class="input" type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Номер телефона:</h3>
+                <input class="input" type="number" placeholder="+7(___)___-__-__" />
+              </div>
+              <div class="calculation-item__input-block">
+                <h3 class="calculation-item__input-title input-title">Email:</h3>
+                <input class="input" type="text" placeholder="Введите e-mail" />
+              </div>
+              <div class="calculation-item__input-block input-block-wide">
+                <h3 class="calculation-item__input-title input-title">Комментарий:</h3>
+                <textarea
+                  class="input input-textarea"
+                  name="product details"
+                  cols="10"
+                  rows="10"
+                  placeholder="Подробности о товаре, описание, количество"
+                ></textarea>
+              </div>
+            </div>
+            <div class="calculation-item__buttons">
+              <button class="calculation-item__button calculation-item__button-back btn-reset btn-empty">Назад</button>
+              <button class="calculation-item__button calculation-item__button-next btn-reset btn-fill">
+                Следующий шаг
+                <svg class="circle-arrow calculation-item__button-arrow">
+                  <use xlink:href="./images/sprite.svg#circle-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="calculation__item">
+          <div class="calculation__section-title section-title">
+            <h2 class="section-title">Получить рассчет стоимости доставки вашего груза</h2>
+            <span></span>
+          </div>
+          <div class="calculation__item-last">
+            <div class="item-last__image"><img src="@images/check-mark.png" alt="image OK" /></div>
+            <div class="item-last__content">
+              <h2 class="item-last__title">Спасибо за заявку!</h2>
+              <p class="item-last__subtitle">Мы обязатальено свяжемся с вами.</p>
+              <div class="item-last__block-healthy">
+                <h3 class="item-last__healthy-title">Так же для вас может быть полезно:</h3>
+                <ul class="item-last__healthy-list">
+                  <li class="item-last__healthy-item">Услуги</li>
+                  <li class="item-last__healthy-item">Примеры грузоперевозок</li>
+                  <li class="item-last__healthy-item">Поиск товаров в Китае</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calculation__content-image">
+        <img src="@images/calculation-image.png" alt="image" />
+      </div>
+    </div>
+  </div>
+</section>

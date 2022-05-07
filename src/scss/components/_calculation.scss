@@ -1,0 +1,234 @@
+.calculation {
+  &__section-title {
+    position: relative;
+    & h2 {
+      text-align: left;
+    }
+    & h2::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 2.5rem;
+      right: 0;
+      width: 85px;
+      height: 3px;
+      background: var(--color-sushi);
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__items {
+    display: flex;
+    width: 60%;
+    height: 90%;
+  }
+  &__item {
+    display: none;
+  }
+  &__item-box {
+    position: relative;
+    background: var(--color-bright-gray);
+    border-radius: 20px;
+    width: 100%;
+    padding: 7rem 5rem 4.1rem 5rem;
+    margin: 6.2rem 0 11rem 0;
+    filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+  }
+  &__item-active {
+    display: inline-block;
+  }
+  &__content-image {
+    position: relative;
+    z-index: 10;
+    margin-left: -4rem;
+    width: 50%;
+  }
+}
+.calculation-item {
+  &__steps {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    display: flex;
+  }
+  &__step {
+    background: var(--color-charade);
+    border: 2px solid #363a4d;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 126%;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+  &__step-active {
+    background: var(--color-sushi);
+    color: var(--color-white);
+  }
+  &__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 3rem;
+  }
+  &__input-block {
+    width: calc(50% - (30px / 2));
+  }
+  &__additional-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input-additional-btn {
+    font-size: 1.4rem;
+    line-height: 146%;
+    text-decoration-line: underline;
+    color: var(--color-fire-bush);
+    margin-bottom: 6px;
+  }
+  &__inputs-checkbox {
+    margin-top: auto;
+  }
+  &__loading-image {
+    margin: 3.4rem 0 2.4rem 0;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.4rem;
+  }
+  &__button {
+    font-size: 1.6rem;
+    line-height: 146%;
+  }
+  &__button-back {
+    padding: 2.2rem 4.6rem;
+  }
+  &__button-next {
+    padding: 2.2rem 2.1rem 2.2rem 3.3rem;
+    display: flex;
+    align-items: center;
+  }
+  &__button-arrow {
+    margin-left: 4.9rem;
+    fill: #b26519;
+  }
+}
+.loading-image {
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    line-height: 126%;
+  }
+  &__btn-delete {
+    font-size: 1.3rem;
+    line-height: 126%;
+    text-decoration-line: underline;
+    color: var(--color-cinnabar);
+  }
+  &__btn-loading {
+    border: 1px dashed rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 126%;
+    color: var(--color-white);
+    padding: 1.2rem 0;
+    width: 100%;
+  }
+}
+.item-last {
+  &__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 126%;
+    margin: 3.4rem 0 1rem 0;
+  }
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 126%;
+  }
+  &__block-healthy {
+    margin-top: 3.7rem;
+  }
+  &__healthy-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 144%;
+  }
+  &__healthy-list {
+    margin-top: 1.3rem;
+  }
+  &__healthy-item {
+    font-size: 1.8rem;
+    line-height: 120%;
+    margin-left: 1.5rem;
+    list-style: disc;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__image {
+    margin-top: 5.6rem;
+  }
+}
+.input-checkbox {
+  &:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+  & label {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 126%;
+    color: var(--color-white);
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+  & input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    & + label::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #282b38;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      margin-right: 0.9rem;
+    }
+    &:checked + label::before {
+      background: #fff;
+      background-image: url("../images/checkbox.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+}
+.input-block-wide {
+  width: 100%;
+}
+.input-textarea {
+  height: 14.7rem;
+}

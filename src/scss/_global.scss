@@ -1,0 +1,121 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.shadowed {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 82px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.shadowed-active {
+  display: block;
+}
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.stop-scroll {
+  @include stop-scroll;
+}
+.circle-arrow {
+  width: 27px;
+  height: 27px;
+}
+.logo {
+  max-width: 17.2rem;
+  max-height: 4.8rem;
+}
+.btn-fill {
+  font-weight: 600;
+  color: var(--color-white);
+  background: var(--color-fire-bush);
+  border-radius: 90px;
+  transition: all 0.5s ease;
+  &:hover {
+    background: var(--color-burnt-sienna);
+  }
+}
+.btn-empty {
+  font-weight: 600;
+  color: var(--color-white);
+  border: 1px solid #e58d35;
+  border-radius: 90px;
+}
+.slider-button {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translate(0, -50%);
+  & img {
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.section-title {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 124.5%;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-align: center;
+  & span {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.9rem;
+    width: 85px;
+    height: 3px;
+  }
+}
+.section-bg-fill {
+  max-width: 182rem;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #363a4d, #363a4d), #f7f7f7;
+  border-radius: 20px;
+}
+.input {
+  font-size: 1.5rem;
+  line-height: 126%;
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1.9rem 1.8rem 1.8rem 2rem;
+  &::placeholder {
+    color: var(--color-silver);
+  }
+}
+.input-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 126%;
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+.hidden {
+  display: none;
+}
+.slide-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.slide-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 90px;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 26px;
+  }
+}
