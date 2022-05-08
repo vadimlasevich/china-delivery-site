@@ -134,16 +134,18 @@
     }
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 950px) {
   .header {
     &__nav,
     &__button {
       display: none;
     }
-    &__burger-menu {
-      display: flex;
-    }
   }
+  .burger-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 920px) {
   .sidebar {
     top: 102px;
   }
