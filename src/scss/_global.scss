@@ -4,25 +4,16 @@
   padding: 0 2rem;
 }
 .shadowed {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  top: 82px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-.shadowed-active {
-  display: block;
+  @include shadowed;
 }
 .btn-reset {
-  border: none;
-  background: transparent;
-  cursor: pointer;
+  @include btn-reset;
 }
 .stop-scroll {
   @include stop-scroll;
+}
+.shadowed-active {
+  display: block;
 }
 .circle-arrow {
   width: 27px;
@@ -47,6 +38,10 @@
   color: var(--color-white);
   border: 1px solid #e58d35;
   border-radius: 90px;
+  transition: all 0.5s ease;
+  &:hover {
+    color: var(--color-fire-bush);
+  }
 }
 .slider-button {
   display: inline-block;

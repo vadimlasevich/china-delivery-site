@@ -1,0 +1,509 @@
+/*Responsive*/
+@media screen and (max-width: 1360px) {
+  .first-screen {
+    &__slide-content {
+      left: 10%;
+    }
+    &__slide-dots {
+      bottom: 6rem;
+    }
+  }
+}
+@media screen and (max-width: 1270px) {
+  .options-slider {
+    &__button-next {
+      left: -2.6rem;
+    }
+    &__button-prev {
+      right: -2.6rem;
+    }
+  }
+  .services-slider {
+    &__button-next {
+      left: -2.6rem;
+    }
+    &__button-prev {
+      right: -2.6rem;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .first-screen {
+    &__slide-title {
+      font-size: 4.4rem;
+    }
+    &__slide-subtitle {
+      font-size: 1.8rem;
+    }
+    &__slide-btn {
+      padding: 1.5rem 2rem;
+      font-size: 1.4rem;
+    }
+  }
+  .options-slider {
+    &__container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    &__slide {
+      min-width: calc(50% - 20px);
+    }
+    &__slide-img {
+      width: 100%;
+    }
+    &__button-next {
+      left: 0;
+    }
+    &__button-prev {
+      right: 0;
+    }
+  }
+  .services-slider {
+    &__container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    &__slide {
+      min-width: calc(50% - 20px);
+    }
+    &__button-next {
+      left: 0;
+    }
+    &__button-prev {
+      right: 0;
+    }
+  }
+}
+@media screen and (max-width: 1060px) {
+  .calculation {
+    padding-bottom: 4rem;
+    &__item-box {
+      padding: 5rem 2rem 3rem 2rem;
+    }
+    &__items {
+      width: 60%;
+    }
+    &__content-image {
+      width: 40%;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__item:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .options-slider {
+    &__slide-btn {
+      font-size: 1.2rem;
+    }
+    &__slide-content {
+      padding: 0 1.5rem 2rem 1.5rem;
+    }
+  }
+  .questions {
+    &__items {
+      width: 50%;
+      margin: 0;
+    }
+    &__form {
+      width: 50%;
+      margin-left: 3rem;
+      padding: 3.8rem 4rem;
+    }
+    &__item {
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+    }
+    &__item-title h4 {
+      font-size: 1.5rem;
+    }
+  }
+  .item-last {
+    &__image {
+      width: 8rem;
+      height: 8rem;
+      margin-top: 4rem;
+    }
+    &__block-healthy {
+      margin-top: 2rem;
+    }
+  }
+  .footer {
+    &__links {
+      width: 70%;
+      margin: 0 0 0 4rem;
+    }
+  }
+}
+@media screen and (max-width: 920px) {
+  .header {
+    &__nav,
+    &__button {
+      display: none;
+    }
+    &__burger-menu {
+      display: flex;
+    }
+  }
+  .sidebar {
+    top: 102px;
+  }
+  .shadowed {
+    top: 102px;
+  }
+  .first-screen {
+    &__slide-title {
+      font-size: 3.5rem;
+    }
+    &__slide-subtitle {
+      font-size: 1.5rem;
+    }
+    &__slide-btn {
+      padding: 1rem 1.7rem;
+      font-size: 1.3rem;
+    }
+    &__slide-btn-arrow {
+      margin-left: 2rem;
+    }
+    &__slide-img {
+      width: 90rem;
+      height: 65rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 0;
+      }
+    }
+    &__slide-dots {
+      bottom: 10rem;
+    }
+  }
+
+  .calculation-item__button {
+    padding: 1.8rem 2rem;
+  }
+  .footer {
+    &__content {
+      flex-direction: column-reverse;
+    }
+    &__links {
+      width: 100%;
+      margin: 0;
+    }
+    &__info {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    &__logo {
+      margin: 0 auto 3rem auto;
+    }
+    &__info-socials {
+      justify-content: center;
+    }
+  }
+  .calculation__item-box {
+    margin: 6.2rem 0 0 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .calculation {
+    &__items {
+      width: 65%;
+    }
+    &__content-image {
+      width: 35%;
+    }
+  }
+  .options-slider__slide-content {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .first-screen {
+    &__slide-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 80%;
+    }
+    &__slide-subtitle {
+      margin: 0.4em auto 1.85em auto;
+      width: 100%;
+    }
+    &__slide-btn {
+      margin: 0 auto;
+    }
+  }
+
+  .options-slider,
+  .services-slider {
+    &__container {
+      max-width: 85%;
+    }
+    &__slide:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    &__slide {
+      min-width: calc(50% - 7.5px);
+    }
+  }
+
+  .calculation {
+    &__section-title {
+      text-align: center;
+      & h2 {
+        text-align: center;
+      }
+      & h2::after {
+        display: none;
+      }
+      & span {
+        background: var(--color-sushi);
+      }
+    }
+    &__content-image {
+      display: none;
+    }
+    &__items {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .calculation-item {
+    &__button {
+      padding: 1.2rem 1.8rem;
+    }
+    &__button-arrow {
+      margin-left: 2rem;
+    }
+  }
+
+  .item-last {
+    &__image {
+      margin: 3rem auto 0 auto;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .benefits {
+    padding: 3rem 0;
+    &__items {
+      row-gap: 2rem;
+      justify-content: center;
+    }
+    &__item {
+      width: calc(33.33% - (30px / 3));
+    }
+    &__item-image {
+      width: 7rem;
+      height: 7rem;
+    }
+    &__item-title {
+      font-size: 1.5rem;
+    }
+    &__content {
+      margin-top: 3rem;
+    }
+  }
+  .options,
+  .services,
+  .about {
+    padding: 3rem 0;
+  }
+  .about {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__description {
+      width: 100%;
+    }
+    &__img {
+      width: 60%;
+    }
+    &__section-title {
+      text-align: center;
+      & span {
+        background: var(--color-sushi);
+        margin: 1.9rem auto 0 auto;
+      }
+    }
+    &__info {
+      margin-top: 3rem;
+      font-size: 1.6rem;
+    }
+  }
+  .questions {
+    padding-bottom: 5rem;
+    &__content {
+      margin-top: 3rem;
+      flex-direction: column;
+    }
+    &__items {
+      width: 100%;
+    }
+    &__form {
+      width: 70%;
+      margin: 3rem 0 0 0;
+    }
+    &__form-btn {
+      width: 70%;
+      padding: 1.5rem 2rem;
+    }
+  }
+  .cooperation {
+    padding: 3rem 0;
+    &__content {
+      margin-top: 4rem;
+    }
+    &__item {
+      flex-direction: column-reverse;
+      align-items: center;
+      &:nth-child(2) {
+        flex-direction: column;
+      }
+    }
+    &__item-text:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    &__item-img {
+      width: 70%;
+    }
+    &__item-list {
+      width: 90%;
+    }
+    &__item-first-list {
+      margin: 2rem 0 4rem 0;
+    }
+    &__item-second-list {
+      margin: 2rem 0 0 0;
+    }
+    &__item-btn {
+      font-size: 1.4rem;
+      padding: 1.5rem 2rem;
+    }
+  }
+  .footer {
+    padding: 4rem 0 3rem 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer {
+    &__links {
+      display: none;
+    }
+    &__info {
+      margin-top: 4rem;
+    }
+  }
+  .options-slider,
+  .services-slider {
+    &__container {
+      max-width: 60%;
+    }
+    &__slide {
+      min-width: calc(100% - 7.5px);
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 8px;
+  }
+  .sidebar {
+    top: 82px;
+  }
+  .shadowed {
+    top: 82px;
+  }
+  .first-screen {
+    &__slider-button-prev,
+    &__slider-button-next {
+      display: none;
+    }
+    &__slide-content {
+      width: 70%;
+    }
+    &__slide-btn {
+      font-size: 1.6rem;
+      line-height: 146%;
+    }
+    &__slider-slide::before {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+      bottom: 4.5rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .calculation {
+    &__items {
+      width: 100%;
+    }
+  }
+  .cooperation__item-list {
+    width: 100%;
+  }
+  .benefits {
+    &__item {
+      width: calc(50% - (30px / 2));
+    }
+  }
+  .questions {
+    &__form {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .calculation-item {
+    &__inputs {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    &__input-block {
+      width: 100%;
+    }
+  }
+  .options-slider,
+  .services-slider {
+    &__container {
+      max-width: 100%;
+    }
+    &__button-next,
+    &__button-prev {
+      display: none;
+    }
+    &__slide-dots {
+      display: flex;
+    }
+  }
+  .options {
+    padding-bottom: 6rem;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .questions {
+    &__form {
+      padding: 2rem 3rem;
+    }
+    &__form-btn {
+      width: 100%;
+    }
+  }
+  .cooperation__item-img {
+    width: 100%;
+  }
+}
