@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>КАРГО из Китая</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220509002148" />
-    <script src="js/app.min.js?_v=20220509002148" defer></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220530194336" />
+    <script src="js/app.min.js?_v=20220530194336" defer></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -66,9 +66,9 @@
     <main>
       <section class="first-screen" id="first-screen">
   <div class="first-screen__slider">
-    <div class="first-screen__slider-container">
-      <div class="first-screen__slider-slides">
-        <div class="first-screen__slider-slide">
+    <div class="first-screen-slider__wrapper">
+      <div class="first-screen-slider__container">
+        <div class="first-screen-slider__slide">
           <div class="first-screen__slide-img">
             <picture><source srcset="images/first-screen-slide-1.webp" type="image/webp"><img src="images/first-screen-slide-1.png" alt="image slide-1" /></picture>
           </div>
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="first-screen__slider-slide">
+        <div class="first-screen-slider__slide">
           <div class="first-screen__slide-img">
             <picture><source srcset="images/first-screen-slide-2.webp" type="image/webp"><img src="images/first-screen-slide-2.png" alt="image slide-1" /></picture>
           </div>
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="first-screen__slider-slide">
+        <div class="first-screen-slider__slide">
           <div class="first-screen__slide-img">
             <picture><source srcset="images/first-screen-slide-3.webp" type="image/webp"><img src="images/first-screen-slide-3.png" alt="image slide-1" /></picture>
           </div>
@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="first-screen__slider-slide">
+        <div class="first-screen-slider__slide">
           <div class="first-screen__slide-img">
             <picture><source srcset="images/first-screen-slide-4.webp" type="image/webp"><img src="images/first-screen-slide-4.png" alt="image slide-1" /></picture>
           </div>
@@ -140,17 +140,17 @@
         </div>
       </div>
     </div>
-    <button class="first-screen__slider-button-prev btn-reset slider-button">
+    <button class="first-screen-slider__button-prev btn-reset slider-button">
       <img src="images/arrow-left.svg" alt="arrow-left" />
     </button>
-    <button class="first-screen__slider-button-next btn-reset slider-button">
+    <button class="first-screen-slider__button-next btn-reset slider-button">
       <img src="images/arrow-right.svg" alt="arrow-right" />
     </button>
     <div class="first-screen__slide-dots slide-dots">
-      <span class="first-screen__slide-dot slide-dot active-dot"></span>
-      <span class="first-screen__slide-dot slide-dot"></span>
-      <span class="first-screen__slide-dot slide-dot"></span>
-      <span class="first-screen__slide-dot slide-dot"></span>
+      <span class="first-screen-slider__slide-dot slide-dot active-dot"></span>
+      <span class="first-screen-slider__slide-dot slide-dot"></span>
+      <span class="first-screen-slider__slide-dot slide-dot"></span>
+      <span class="first-screen-slider__slide-dot slide-dot"></span>
     </div>
   </div>
 </section>
@@ -382,109 +382,119 @@
       <span></span>
     </div>
     <div class="options__slider">
-      <div class="options-slider__container">
-        <div class="options-slider__slides">
+      <div class="options-slider__wrapper">
+        <div class="options-slider__container">
           <div class="options-slider__slide">
-            <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-1.webp" type="image/webp"><img src="images/options-slide-1.jpg" alt="options-slide-1" /></picture></div>
-            <div class="options-slider__slide-content">
-              <h3 class="options-slider__slide-title">Авто - обычная</h3>
-              <div class="options-slider__slide-info">
-                <div class="options-slider__slide-terms">9-15 дней</div>
-                <div class="options-slider__slide-weight">от 5 кг</div>
-              </div>
-              <div class="options-slider__slide-price">
-                <span class="options-slider__slide-price-from">от</span>
-                <span class="options-slider__slide-price-number">2,5</span>
-                <span class="options-slider__slide-price-currency">$/кг</span>
-              </div>
-              <div class="options-slider__slide-buttons">
-                <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
-                <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="options-slider__slide-wrapper">
+              <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-1.webp" type="image/webp"><img src="images/options-slide-1.jpg" alt="options-slide-1" /></picture></div>
+              <div class="options-slider__slide-content">
+                <h3 class="options-slider__slide-title">Авто - обычная</h3>
+                <div class="options-slider__slide-info">
+                  <div class="options-slider__slide-terms">9-15 дней</div>
+                  <div class="options-slider__slide-weight">от 5 кг</div>
+                </div>
+                <div class="options-slider__slide-price">
+                  <span class="options-slider__slide-price-from">от</span>
+                  <span class="options-slider__slide-price-number">2,5</span>
+                  <span class="options-slider__slide-price-currency">$/кг</span>
+                </div>
+                <div class="options-slider__slide-buttons">
+                  <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
+                  <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="options-slider__slide">
-            <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-2.webp" type="image/webp"><img src="images/options-slide-2.jpg" alt="options-slide-2" /></picture></div>
-            <div class="options-slider__slide-content">
-              <h3 class="options-slider__slide-title">Авто - ускоренная</h3>
-              <div class="options-slider__slide-info">
-                <div class="options-slider__slide-terms">9-15 дней</div>
-                <div class="options-slider__slide-weight">от 5 кг</div>
-              </div>
-              <div class="options-slider__slide-price">
-                <span class="options-slider__slide-price-from">от</span>
-                <span class="options-slider__slide-price-number">2,5</span>
-                <span class="options-slider__slide-price-currency">$/кг</span>
-              </div>
-              <div class="options-slider__slide-buttons">
-                <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
-                <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <div class="options-slider__slide">
-            <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-3.webp" type="image/webp"><img src="images/options-slide-3.jpg" alt="options-slide-3" /></picture></div>
-            <div class="options-slider__slide-content">
-              <h3 class="options-slider__slide-title">Авиа</h3>
-              <div class="options-slider__slide-info">
-                <div class="options-slider__slide-terms">9-15 дней</div>
-                <div class="options-slider__slide-weight">от 5 кг</div>
-              </div>
-              <div class="options-slider__slide-price">
-                <span class="options-slider__slide-price-from">от</span>
-                <span class="options-slider__slide-price-number">2,5</span>
-                <span class="options-slider__slide-price-currency">$/кг</span>
-              </div>
-              <div class="options-slider__slide-buttons">
-                <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
-                <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="options-slider__slide-wrapper">
+              <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-2.webp" type="image/webp"><img src="images/options-slide-2.jpg" alt="options-slide-2" /></picture></div>
+              <div class="options-slider__slide-content">
+                <h3 class="options-slider__slide-title">Авто - ускоренная</h3>
+                <div class="options-slider__slide-info">
+                  <div class="options-slider__slide-terms">9-15 дней</div>
+                  <div class="options-slider__slide-weight">от 5 кг</div>
+                </div>
+                <div class="options-slider__slide-price">
+                  <span class="options-slider__slide-price-from">от</span>
+                  <span class="options-slider__slide-price-number">2,5</span>
+                  <span class="options-slider__slide-price-currency">$/кг</span>
+                </div>
+                <div class="options-slider__slide-buttons">
+                  <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
+                  <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="options-slider__slide">
-            <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-4.webp" type="image/webp"><img src="images/options-slide-4.jpg" alt="options-slide-4" /></picture></div>
-            <div class="options-slider__slide-content">
-              <h3 class="options-slider__slide-title">Ж/д</h3>
-              <div class="options-slider__slide-info">
-                <div class="options-slider__slide-terms">9-15 дней</div>
-                <div class="options-slider__slide-weight">от 5 кг</div>
-              </div>
-              <div class="options-slider__slide-price">
-                <span class="options-slider__slide-price-from">от</span>
-                <span class="options-slider__slide-price-number">2,5</span>
-                <span class="options-slider__slide-price-currency">$/кг</span>
-              </div>
-              <div class="options-slider__slide-buttons">
-                <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
-                <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="options-slider__slide-wrapper">
+              <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-3.webp" type="image/webp"><img src="images/options-slide-3.jpg" alt="options-slide-3" /></picture></div>
+              <div class="options-slider__slide-content">
+                <h3 class="options-slider__slide-title">Авиа</h3>
+                <div class="options-slider__slide-info">
+                  <div class="options-slider__slide-terms">9-15 дней</div>
+                  <div class="options-slider__slide-weight">от 5 кг</div>
+                </div>
+                <div class="options-slider__slide-price">
+                  <span class="options-slider__slide-price-from">от</span>
+                  <span class="options-slider__slide-price-number">2,5</span>
+                  <span class="options-slider__slide-price-currency">$/кг</span>
+                </div>
+                <div class="options-slider__slide-buttons">
+                  <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
+                  <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="options-slider__slide">
-            <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-5.webp" type="image/webp"><img src="images/options-slide-5.jpg" alt="options-slide-5" /></picture></div>
-            <div class="options-slider__slide-content">
-              <h3 class="options-slider__slide-title">Море</h3>
-              <div class="options-slider__slide-info">
-                <div class="options-slider__slide-terms">9-15 дней</div>
-                <div class="options-slider__slide-weight">от 5 кг</div>
+            <div class="options-slider__slide-wrapper">
+              <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-4.webp" type="image/webp"><img src="images/options-slide-4.jpg" alt="options-slide-4" /></picture></div>
+              <div class="options-slider__slide-content">
+                <h3 class="options-slider__slide-title">Ж/д</h3>
+                <div class="options-slider__slide-info">
+                  <div class="options-slider__slide-terms">9-15 дней</div>
+                  <div class="options-slider__slide-weight">от 5 кг</div>
+                </div>
+                <div class="options-slider__slide-price">
+                  <span class="options-slider__slide-price-from">от</span>
+                  <span class="options-slider__slide-price-number">2,5</span>
+                  <span class="options-slider__slide-price-currency">$/кг</span>
+                </div>
+                <div class="options-slider__slide-buttons">
+                  <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
+                  <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+                </div>
               </div>
-              <div class="options-slider__slide-price">
-                <span class="options-slider__slide-price-from">от</span>
-                <span class="options-slider__slide-price-number">2,5</span>
-                <span class="options-slider__slide-price-currency">$/кг</span>
-              </div>
-              <div class="options-slider__slide-buttons">
-                <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
-                <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            </div>
+          </div>
+          <div class="options-slider__slide">
+            <div class="options-slider__slide-wrapper">
+              <div class="options-slider__slide-img"><picture><source srcset="images/options-slide-5.webp" type="image/webp"><img src="images/options-slide-5.jpg" alt="options-slide-5" /></picture></div>
+              <div class="options-slider__slide-content">
+                <h3 class="options-slider__slide-title">Море</h3>
+                <div class="options-slider__slide-info">
+                  <div class="options-slider__slide-terms">9-15 дней</div>
+                  <div class="options-slider__slide-weight">от 5 кг</div>
+                </div>
+                <div class="options-slider__slide-price">
+                  <span class="options-slider__slide-price-from">от</span>
+                  <span class="options-slider__slide-price-number">2,5</span>
+                  <span class="options-slider__slide-price-currency">$/кг</span>
+                </div>
+                <div class="options-slider__slide-buttons">
+                  <button class="options-slider__slide-btn btn-reset btn-fill">Оставить заявку</button>
+                  <button class="options-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="options-slider__button-next btn-reset slider-button">
+      <button class="options-slider__button-prev btn-reset slider-button">
         <img src="images/gray-arrow-left.svg" alt="arrow-left" />
       </button>
-      <button class="options-slider__button-prev btn-reset slider-button">
+      <button class="options-slider__button-next btn-reset slider-button">
         <img src="images/gray-arrow-right.svg" alt="arrow-right" />
       </button>
       <div class="options-slider__slide-dots slide-dots">
@@ -504,58 +514,66 @@
       <span></span>
     </div>
     <div class="services__slider">
-      <div class="services-slider__container">
-        <div class="services-slider__slides">
+      <div class="services-slider__wrapper">
+        <div class="services-slider__container">
           <div class="services-slider__slide">
-            <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-1.webp" type="image/webp"><img src="images/services-slide-1.jpg" alt="slide-img" /></picture></div>
-            <div class="services-slider__slide-content">
-              <h3 class="services-slider__slide-title">Выкуп товара</h3>
-              <p class="services-slider__slide-subtitle">
-                Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные
-                товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
-              </p>
-              <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="services-slider__slide-wrapper">
+              <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-1.webp" type="image/webp"><img src="images/services-slide-1.jpg" alt="slide-img" /></picture></div>
+              <div class="services-slider__slide-content">
+                <h3 class="services-slider__slide-title">Выкуп товара</h3>
+                <p class="services-slider__slide-subtitle">
+                  Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и
+                  цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                </p>
+                <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+              </div>
             </div>
           </div>
           <div class="services-slider__slide">
-            <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-2.webp" type="image/webp"><img src="images/services-slide-2.jpg" alt="slide-img" /></picture></div>
-            <div class="services-slider__slide-content">
-              <h3 class="services-slider__slide-title">Страховка груза</h3>
-              <p class="services-slider__slide-subtitle">
-                Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные
-                товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
-              </p>
-              <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="services-slider__slide-wrapper">
+              <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-2.webp" type="image/webp"><img src="images/services-slide-2.jpg" alt="slide-img" /></picture></div>
+              <div class="services-slider__slide-content">
+                <h3 class="services-slider__slide-title">Страховка груза</h3>
+                <p class="services-slider__slide-subtitle">
+                  Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и
+                  цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                </p>
+                <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+              </div>
             </div>
           </div>
           <div class="services-slider__slide">
-            <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-3.webp" type="image/webp"><img src="images/services-slide-3.jpg" alt="slide-img" /></picture></div>
-            <div class="services-slider__slide-content">
-              <h3 class="services-slider__slide-title">Аренда склада</h3>
-              <p class="services-slider__slide-subtitle">
-                Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные
-                товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
-              </p>
-              <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="services-slider__slide-wrapper">
+              <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-3.webp" type="image/webp"><img src="images/services-slide-3.jpg" alt="slide-img" /></picture></div>
+              <div class="services-slider__slide-content">
+                <h3 class="services-slider__slide-title">Аренда склада</h3>
+                <p class="services-slider__slide-subtitle">
+                  Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и
+                  цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                </p>
+                <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+              </div>
             </div>
           </div>
           <div class="services-slider__slide">
-            <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-4.webp" type="image/webp"><img src="images/services-slide-4.jpg" alt="slide-img" /></picture></div>
-            <div class="services-slider__slide-content">
-              <h3 class="services-slider__slide-title">Перевод денежных средств</h3>
-              <p class="services-slider__slide-subtitle">
-                Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные
-                товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
-              </p>
-              <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+            <div class="services-slider__slide-wrapper">
+              <div class="services-slider__slide-img"><picture><source srcset="images/services-slide-4.webp" type="image/webp"><img src="images/services-slide-4.jpg" alt="slide-img" /></picture></div>
+              <div class="services-slider__slide-content">
+                <h3 class="services-slider__slide-title">Перевод денежных средств</h3>
+                <p class="services-slider__slide-subtitle">
+                  Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и
+                  цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                </p>
+                <button class="services-slider__slide-btn btn-reset btn-empty">Подробнее</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="services-slider__button-next btn-reset slider-button">
+      <button class="services-slider__button-prev btn-reset slider-button">
         <img src="images/gray-arrow-left.svg" alt="arrow-left" />
       </button>
-      <button class="services-slider__button-prev btn-reset slider-button">
+      <button class="services-slider__button-next btn-reset slider-button">
         <img src="images/gray-arrow-right.svg" alt="arrow-right" />
       </button>
       <div class="services-slider__slide-dots slide-dots">
@@ -754,12 +772,14 @@
               Если Вы оформили груз по нашей инструкции и сделали все правильно, то при получении Вашего груза на складе в Китае
               статус заказа изменится на "На складе".
             </li>
-            <button class="cooperation__item-btn btn-reset btn-fill">
-              Оформить груз
-              <svg class="circle-arrow cooperation__item-btn-arrow">
-                <use xlink:href="images/sprite.svg#circle-arrow"></use>
-              </svg>
-            </button>
+            <li>
+              <button class="cooperation__item-btn btn-reset btn-fill">
+                Оформить груз
+                <svg class="circle-arrow cooperation__item-btn-arrow">
+                  <use xlink:href="images/sprite.svg#circle-arrow"></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
