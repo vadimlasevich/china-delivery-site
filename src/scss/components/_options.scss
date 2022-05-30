@@ -11,27 +11,27 @@
   }
 }
 .options-slider {
-  &__container {
+  &__wrapper {
     overflow: hidden;
   }
-  &__slides {
+  &__container {
     display: flex;
-    justify-content: space-between;
     transition: all 1s ease;
   }
-  &__slide {
-    min-width: calc(33.33% - 20px);
+  &__slide-wrapper {
     background: var(--color-bright-gray);
-    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+    box-shadow: 10px 5px 10px rgba(30, 35, 66, 0.15);
     border-radius: 20px;
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
+  }
+  &__slide {
+    min-width: 33.333%;
+    padding: 0 1.5rem;
   }
   &__slide-img img {
     border-radius: 20px 20px 0 0;
     width: 100%;
   }
+
   &__slide-content {
     padding: 2.7rem 2.3rem;
     text-align: center;
@@ -57,7 +57,7 @@
   }
   &__slide-terms {
     &::before {
-      content: url("../images/calendar-icon.svg");
+      content: url('../images/calendar-icon.svg');
       width: 2.2rem;
       height: 2.2rem;
       margin-right: 1.3rem;
@@ -66,7 +66,7 @@
   &__slide-weight {
     margin-left: 2rem;
     &::before {
-      content: url("../images/box-icon.svg");
+      content: url('../images/box-icon.svg');
       width: 2.4rem;
       height: 2.4rem;
       margin-right: 1.3rem;
@@ -99,10 +99,10 @@
     padding: 1.3rem 0;
   }
   &__button-next {
-    left: -5.8rem;
+    right: -5.8rem;
   }
   &__button-prev {
-    right: -5.8rem;
+    left: -5.8rem;
   }
   &__slide-dots {
     display: none;

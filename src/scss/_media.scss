@@ -10,20 +10,13 @@
   }
 }
 @media screen and (max-width: 1270px) {
-  .options-slider {
-    &__button-next {
-      left: -2.6rem;
-    }
-    &__button-prev {
-      right: -2.6rem;
-    }
-  }
+  .options-slider,
   .services-slider {
     &__button-next {
-      left: -2.6rem;
+      right: -2.6rem;
     }
     &__button-prev {
-      right: -2.6rem;
+      left: -2.6rem;
     }
   }
 }
@@ -40,37 +33,20 @@
       font-size: 1.4rem;
     }
   }
-  .options-slider {
-    &__container {
-      max-width: 70%;
-      margin: 0 auto;
-    }
-    &__slide {
-      min-width: calc(50% - 20px);
-    }
-    &__slide-img {
-      width: 100%;
-    }
-    &__button-next {
-      left: 0;
-    }
-    &__button-prev {
-      right: 0;
-    }
-  }
+  .options-slider,
   .services-slider {
-    &__container {
-      max-width: 70%;
+    &__wrapper {
+      max-width: 80%;
       margin: 0 auto;
     }
     &__slide {
-      min-width: calc(50% - 20px);
+      min-width: 50%;
     }
     &__button-next {
-      left: 0;
+      right: 0;
     }
     &__button-prev {
-      right: 0;
+      left: 0;
     }
   }
 }
@@ -180,7 +156,6 @@
       bottom: 10rem;
     }
   }
-
   .calculation-item__button {
     padding: 1.8rem 2rem;
   }
@@ -240,20 +215,12 @@
       margin: 0 auto;
     }
   }
-
   .options-slider,
   .services-slider {
-    &__container {
-      max-width: 85%;
-    }
-    &__slide:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-    &__slide {
-      min-width: calc(50% - 7.5px);
+    &__wrapper {
+      max-width: 90%;
     }
   }
-
   .calculation {
     &__section-title {
       text-align: center;
@@ -283,7 +250,6 @@
       margin-left: 2rem;
     }
   }
-
   .item-last {
     &__image {
       margin: 3rem auto 0 auto;
@@ -409,11 +375,11 @@
   }
   .options-slider,
   .services-slider {
-    &__container {
-      max-width: 60%;
+    &__wrapper {
+      max-width: 80%;
     }
     &__slide {
-      min-width: calc(100% - 7.5px);
+      min-width: 100%;
     }
   }
 }
@@ -427,11 +393,13 @@
   .shadowed {
     top: 82px;
   }
-  .first-screen {
-    &__slider-button-prev,
-    &__slider-button-next {
+  .first-screen-slider {
+    &__button-prev,
+    &__button-next {
       display: none;
     }
+  }
+  .first-screen {
     &__slide-content {
       width: 70%;
     }
@@ -440,7 +408,7 @@
       line-height: 146%;
     }
     &__slider-slide::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 2rem;
       left: 0;
@@ -480,7 +448,7 @@
   }
   .options-slider,
   .services-slider {
-    &__container {
+    &__wrapper {
       max-width: 100%;
     }
     &__button-next,

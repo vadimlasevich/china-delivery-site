@@ -3,26 +3,6 @@
     position: relative;
     z-index: 1;
   }
-  &__slider-container {
-    overflow: hidden;
-  }
-  &__slider-slides {
-    display: flex;
-    transition: all 1.3s ease;
-    margin: 0 auto;
-  }
-  &__slider-slide {
-    max-width: 182rem;
-    min-width: 100%;
-    position: relative;
-    & .container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
-  }
   &__slide-content {
     max-width: 46.3rem;
     position: absolute;
@@ -52,15 +32,37 @@
   &__slide-dots {
     bottom: 8rem;
   }
-  &__slider-button-next {
-    right: 5%;
-  }
-  &__slider-button-prev {
-    left: 5%;
-  }
   &__slide-btn-arrow {
     margin-left: 4.9rem;
     fill: #b26519;
+  }
+}
+.first-screen-slider {
+  &__wrapper {
+    overflow: hidden;
+  }
+  &__container {
+    display: flex;
+    transition: all 1.3s ease;
+    margin: 0 auto;
+  }
+  &__slide {
+    max-width: 182rem;
+    min-width: 100%;
+    position: relative;
+    & .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &__button-next {
+    right: 5%;
+  }
+  &__button-prev {
+    left: 5%;
   }
 }
 .active-dot {
